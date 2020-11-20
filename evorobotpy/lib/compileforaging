@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm ErForaging*.so
+rm ErForaging.cpp
+rm -r build
+python setupErForaging.py build_ext --inplace
+cp ErForaging*.so ../bin
